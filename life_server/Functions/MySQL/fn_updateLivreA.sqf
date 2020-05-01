@@ -14,8 +14,12 @@ private["_query","_queryResult","_value","_playerUID"];
 _playerUID = _this select 0;
 _value = _this select 1;
 
-_query = format["UPDATE players SET livreA = '%1' WHERE pid='%2'",_value,_playerUID];
+_query = format["UPDATE players SET livrea = '%1' WHERE pid='%2'",_value,_playerUID];
 
-if(_query isEqualTo "") exitWith {};
+if(_query isEqualTo "") exitWith {
+	diag_log "====== Novax Script Error ======";
+	diag_log format ["Fichier life_server\Function\MySQL\fn_updateLivreA.sqf : _query = %1",_query];
+	diag_log "====== Novax Script Error ======";
+};
 
 [_query,1] call DB_fnc_asyncCall;
