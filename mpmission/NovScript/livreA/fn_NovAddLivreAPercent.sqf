@@ -26,6 +26,6 @@ while { true } do {
 	sleep 1800.0; // Every 30 min
 	LIVREA = LIVREA + _percent;
 	[getPlayerUID player,LIVREA] remoteExecCall ["DB_fnc_updateLivreA",RSERV];
-    systemChat format ["Votre livret A a augmenté de %1€ il est maintenant à %2€",[_percent] call life_fnc_numberText,[LIVREA] call life_fnc_numberText];
+    systemChat format [localize "STR_NOV_livretA_Increase",[_percent] call life_fnc_numberText,[LIVREA] call life_fnc_numberText];
 };
 

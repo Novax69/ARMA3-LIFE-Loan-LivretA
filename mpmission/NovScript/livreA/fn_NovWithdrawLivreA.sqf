@@ -20,7 +20,7 @@ _playerUID = getPlayerUID player;
 if (_value > 999999) exitWith {hint localize "STR_ATM_GreaterThan";};
 if (_value < 0) exitWith {};
 if (!([str(_value)] call TON_fnc_isnumber)) exitWith {hint localize "STR_ATM_notnumeric"};
-if (_value > LIVREA) exitWith {hint "Pas assez d'argent dans le livre A"};
+if (_value > LIVREA) exitWith {hint localize "STR_NOV_livretA_NotEnoughInAccount"};
 
 CASH = CASH + _value;
 LIVREA = LIVREA - _value;
@@ -29,6 +29,6 @@ LIVREA = LIVREA - _value;
 
 
 
-hint format["Tu as bien retiré %1 € de ton livret A",[_value] call life_fnc_numberText];
+hint format[localize "STR_NOV_livretA_WithdrawSuccess",[_value] call life_fnc_numberText];
 [] call life_fnc_NovLivretAMenu;
 [6] call SOCK_fnc_updatePartial; //Silent Sync

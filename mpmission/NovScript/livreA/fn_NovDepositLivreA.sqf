@@ -29,7 +29,7 @@ if (!([str(_value)] call TON_fnc_isnumber)) exitWith {hint localize "STR_ATM_not
 if (_value > CASH) exitWith {hint localize "STR_ATM_NotEnoughCash"};
 if (_value + LIVREA > _depositLimit) exitWith {
     _aboveNb = (_value + LIVREA) - _depositLimit; // Dit de combien c'est dépassé
-    hint format["La limite sur le compte est de %1€, tu as %2 € de trop pour atteindre la limite",[_depositLimit] call life_fnc_numberText,[_aboveNb] call life_fnc_numberText];
+    hint format[localize "STR_NOV_livretA_AboveLimit",[_depositLimit] call life_fnc_numberText,[_aboveNb] call life_fnc_numberText];
 };
 
 
@@ -40,7 +40,7 @@ LIVREA = LIVREA + _value;
 
 [_playerUID,LIVREA] remoteExecCall ["DB_fnc_updateLivreA",RSERV];
 
-hint format["Vous avez bien déposé %1 € dans votre livret A",[_value] call life_fnc_numberText];
+hint format[localize "STR_NOV_livretA_DepositSuccess",[_value] call life_fnc_numberText];
 
 [] call life_fnc_NovLivretAMenu;
 [6] call SOCK_fnc_updatePartial; //Silent Sync
