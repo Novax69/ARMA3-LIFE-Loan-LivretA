@@ -1,7 +1,7 @@
 <!--
     If Someone know the other language you cant create an issue on github :)
 --> 
-        <Key ID="STR_NOV_livretA_TitleMenu">
+         <Key ID="STR_NOV_livretA_TitleMenu">
             <Original>Livret A Managment</Original>
             <Czech>TO EDIT => LIVRET A</Czech>
             <Spanish>TO EDIT => LIVRET A</Spanish>
@@ -13,23 +13,23 @@
             <Polish>TO EDIT => LIVRET A</Polish>
         </Key>
         <Key ID="STR_NOV_livretA_Increase">
-            <Original>Your livret A increased of %1$ you now have %2$</Original>
+            <Original>Your livret A increased of $%1 you now have $%2</Original>
             <Czech>TO EDIT => LIVRET A</Czech>
             <Spanish>TO EDIT => LIVRET A</Spanish>
             <Russian>TO EDIT => LIVRET A</Russian>
             <German>TO EDIT => LIVRET A</German>
-            <French>Votre livret A a augmenté de %1€ il est maintenant à %2€</French>
+            <French>Votre livret A a augmenté de %1 € il est maintenant à %2 €</French>
             <Italian>TO EDIT => LIVRET A</Italian>
             <Portuguese>TO EDIT => LIVRET A</Portuguese>
             <Polish>TO EDIT => LIVRET A</Polish>
         </Key>
         <Key ID="STR_NOV_livretA_AboveLimit">
-            <Original>Your livret A limit is %1$ you did try to deposit %2$ above this limit</Original>
+            <Original>Your livret A limit is $%1 you did try to deposit $%2 above this limit</Original>
             <Czech>TO EDIT => LIVRET A</Czech>
             <Spanish>TO EDIT => LIVRET A</Spanish>
             <Russian>TO EDIT => LIVRET A</Russian>
             <German>TO EDIT => LIVRET A</German>
-            <French>La limite sur le compte est de %1€, tu as %2 € de trop pour atteindre la limite</French>
+            <French>La limite sur le compte est de %1 €, tu as %2 € de trop pour atteindre la limite</French>
             <Italian>TO EDIT => LIVRET A</Italian>
             <Portuguese>TO EDIT => LIVRET A</Portuguese>
             <Polish>TO EDIT => LIVRET A</Polish>
