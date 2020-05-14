@@ -1,6 +1,6 @@
 #include "..\..\script_macros.hpp"
 /*
-    File: fn_addLivreAPercent.sqf
+    File: fn_NovAddLivreAPercent.sqf
     Author: Novax
 	github : https://github.com/Novax69 <== Find my other scripts for arma here
 	Date : 26/04/2020

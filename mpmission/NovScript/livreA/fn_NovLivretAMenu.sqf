@@ -1,6 +1,6 @@
 #include "..\..\script_macros.hpp"
 /*
-	File : fn_livretAMenu.sqf
+	File : fn_NovLivretAMenu.sqf
 	Author : Novax
 	github : https://github.com/Novax69 <== Find my other scripts for arma here
 	Date : 26/04/2020
