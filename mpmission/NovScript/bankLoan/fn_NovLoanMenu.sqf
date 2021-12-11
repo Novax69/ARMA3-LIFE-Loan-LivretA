@@ -15,8 +15,8 @@ disableSerialization;
 
 private["_btnBurrow","_interest","_useDonorLevel","_donorAmount","_donorLevel"];
 
-_interest = LIFE_SETTINGS(getNumber,"nov_interestPercent");
-_useDonorLevel = LIFE_SETTINGS(getNumber,"nov_useDonator");
+_interest = NOV_PARAMS(getNumber,"nov_interestPercent");
+_useDonorLevel = NOV_PARAMS(getNumber,"nov_useDonator");
 
 
 

@@ -11,8 +11,8 @@
 
 private["_donorLevel","_percent","_useDonorLevel","_percentRate"];
 
-_useDonorLevel = LIFE_SETTINGS(getNumber,"nov_useDonator");
-_percentRate = LIFE_SETTINGS(getNumber,"nov_percentToAdd");
+_useDonorLevel = NOV_PARAMS(getNumber,"nov_useDonator");
+_percentRate = NOV_PARAMS(getNumber,"nov_percentToAdd");
 
 
 // Only works if the player is a donor

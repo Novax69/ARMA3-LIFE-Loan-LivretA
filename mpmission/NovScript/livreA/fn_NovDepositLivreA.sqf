@@ -12,9 +12,9 @@
 
 private ["_value","_playerUID","_depositLimit","_aboveNb","_useDonorLevel","_donorAddedLimit"];
 _value = parseNumber(ctrlText 690015);
-_depositLimit = LIFE_SETTINGS(getNumber,"nov_depositLimit");
-_useDonorLevel = LIFE_SETTINGS(getNumber,"nov_useDonator");
-_donorAddedLimit = LIFE_SETTINGS(getNumber,"nov_numberAddedDonor");
+_depositLimit = NOV_PARAMS(getNumber,"nov_depositLimit");
+_useDonorLevel = NOV_PARAMS(getNumber,"nov_useDonator");
+_donorAddedLimit = NOV_PARAMS(getNumber,"nov_numberAddedDonor");
 
 if(_useDonorLevel isEqualTo 1) then {
 	_donorLevel = FETCH_CONST(life_donorlevel); // don't forget to enable life_donorlevel in config_master

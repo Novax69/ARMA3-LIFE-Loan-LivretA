@@ -12,9 +12,9 @@
 
 private["_depositBtn","_depositLimit","_useDonorLevel","_donorAddedLimit"];
 
-_depositLimit = LIFE_SETTINGS(getNumber,"nov_depositLimit");
-_useDonorLevel = LIFE_SETTINGS(getNumber,"nov_useDonator");
-_donorAddedLimit = LIFE_SETTINGS(getNumber,"nov_numberAddedDonor");
+_depositLimit = NOV_PARAMS(getNumber,"nov_depositLimit");
+_useDonorLevel = NOV_PARAMS(getNumber,"nov_useDonator");
+_donorAddedLimit = NOV_PARAMS(getNumber,"nov_numberAddedDonor");
 
 if(_useDonorLevel isEqualTo 1) then {
 	_donorLevel = FETCH_CONST(life_donorlevel); // don't forget to enable life_donorlevel in config_master
@@ -23,7 +23,7 @@ if(_useDonorLevel isEqualTo 1) then {
 
 
 if (!life_use_atm) exitWith {
-    hint format [localize "STR_Shop_ATMRobbed",(LIFE_SETTINGS(getNumber,"noatm_timer"))];
+    hint format [localize "STR_Shop_ATMRobbed",(NOV_PARAMS(getNumber,"noatm_timer"))];
 };
 
 if (!dialog) then {

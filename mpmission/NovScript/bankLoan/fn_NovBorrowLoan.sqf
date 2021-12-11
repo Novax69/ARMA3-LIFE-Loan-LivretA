@@ -14,9 +14,9 @@ private["_value","_percent","_borrowLimit","_aboveNb","_playerUID","_interest","
 
 _value = parseNumber(ctrlText 690103);
 _playerUID = getPlayerUID player;
-_borrowLimit = LIFE_SETTINGS(getNumber,"nov_loanAmmountLimit");
-_interest = LIFE_SETTINGS(getNumber,"nov_interestPercent");
-_useDonorLevel = LIFE_SETTINGS(getNumber,"nov_useDonator");
+_borrowLimit = NOV_PARAMS(getNumber,"nov_loanAmmountLimit");
+_interest = NOV_PARAMS(getNumber,"nov_interestPercent");
+_useDonorLevel = NOV_PARAMS(getNumber,"nov_useDonator");
 
 
 if(_useDonorLevel isEqualTo 1) then {

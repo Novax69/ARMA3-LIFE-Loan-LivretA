@@ -12,14 +12,14 @@
 
 private["_time","_percent","_paySide","_aboveNb","_leftToPay"];
 
-_time = LIFE_SETTINGS(getNumber,"paycheck_period");
+_time = NOV_PARAMS(getNumber,"paycheck_period");
 _time = _time * 60; //convert minutes to seconds
 
 
 switch(playerSide) do {
-	case west: { _paySide = LIFE_SETTINGS(getNumber,"paycheck_cop");};
-	case civilian: { _paySide = LIFE_SETTINGS(getNumber,"paycheck_cop");};
-	case independent : { _paySide = LIFE_SETTINGS(getNumber,"paycheck_cop");};
+	case west: { _paySide = NOV_PARAMS(getNumber,"paycheck_cop");};
+	case civilian: { _paySide = NOV_PARAMS(getNumber,"paycheck_cop");};
+	case independent : { _paySide = NOV_PARAMS(getNumber,"paycheck_cop");};
 };
 
 _percent = (_paySide * 15 / 100);
