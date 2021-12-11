@@ -1,7 +1,5 @@
-
-class Life_Client_Core {
-    tag = "life";
-
+class Novax_Client_Core {
+    tag = "nov";
     //Add inside this class Here
     class NovScriptLoan {
         file = "NovScript\bankLoan";
@@ -19,4 +17,5 @@ class Life_Client_Core {
         class NovWithdrawLivreA {};
 
     };
+
 };

@@ -1,6 +1,6 @@
 //Add somewhere :
 
 [] spawn {
-	[] call life_fnc_NovAddLivreAPercent;
-	[] call life_fnc_NovAutomaticRepay;
+	[] call nov_fnc_NovAddLivreAPercent;
+	[] call nov_fnc_NovAutomaticRepay;
 };

@@ -34,5 +34,5 @@ LOAN = LOAN - _value;
 
 hint format[localize "STR_NOV_loan_RepaySuccess",[_value] call life_fnc_numberText];
 
-[] call life_fnc_NovLoanMenu;
+[] call nov_fnc_NovLoanMenu;
 [6] call SOCK_fnc_updatePartial; //Silent Sync

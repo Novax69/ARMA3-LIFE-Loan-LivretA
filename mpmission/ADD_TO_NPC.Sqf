@@ -7,9 +7,9 @@
 this enableSimulation false; 
 this allowDamage false; 
 // FRENCH :
-this addAction["<t color='#ADFF2F'>Emprunt bancaire</t>",life_fnc_NovLoanMenu,"",0,FALSE,FALSE,"",' isNull objectParent player && player distance _target < 4 '];
+this addAction["<t color='#ADFF2F'>Emprunt bancaire</t>",nov_fnc_NovLoanMenu,"",0,FALSE,FALSE,"",' isNull objectParent player && player distance _target < 4 '];
 // ENGLISH :
-this addAction["<t color='#ADFF2F'>Bank Loan</t>",life_fnc_NovLoanMenu,"",0,FALSE,FALSE,"",' isNull objectParent player && player distance _target < 4 '];
+this addAction["<t color='#ADFF2F'>Bank Loan</t>",nov_fnc_NovLoanMenu,"",0,FALSE,FALSE,"",' isNull objectParent player && player distance _target < 4 '];
 
 /*
 	##
@@ -19,6 +19,6 @@ this addAction["<t color='#ADFF2F'>Bank Loan</t>",life_fnc_NovLoanMenu,"",0,FALS
 this enableSimulation false; 
 this allowDamage false; 
 // FRENCH :
-this addAction["<t color='#ADFF2F'>Votre Livret A</t>",life_fnc_NovLivretAMenu,"",0,FALSE,FALSE,"",' isNull objectParent player && player distance _target < 4 '];
+this addAction["<t color='#ADFF2F'>Votre Livret A</t>",nov_fnc_NovLivretAMenu,"",0,FALSE,FALSE,"",' isNull objectParent player && player distance _target < 4 '];
 // ENGLISH :
-this addAction["<t color='#ADFF2F'>Your Livret A</t>",life_fnc_NovLivretAMenu,"",0,FALSE,FALSE,"",' isNull objectParent player && player distance _target < 4 '];
+this addAction["<t color='#ADFF2F'>Your Livret A</t>",nov_fnc_NovLivretAMenu,"",0,FALSE,FALSE,"",' isNull objectParent player && player distance _target < 4 '];

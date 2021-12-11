@@ -42,5 +42,5 @@ LIVREA = LIVREA + _value;
 
 hint format[localize "STR_NOV_livretA_DepositSuccess",[_value] call life_fnc_numberText];
 
-[] call life_fnc_NovLivretAMenu;
+[] call nov_fnc_NovLivretAMenu;
 [6] call SOCK_fnc_updatePartial; //Silent Sync
