@@ -12,7 +12,7 @@
 
 private["_time","_percent","_paySide","_aboveNb","_leftToPay"];
 
-_time = NOV_PARAMS(getNumber,"paycheck_period");
+_time = LIFE_SETTINGS(getNumber,"paycheck_period");
 _time = _time * 60; //convert minutes to seconds
 
 
