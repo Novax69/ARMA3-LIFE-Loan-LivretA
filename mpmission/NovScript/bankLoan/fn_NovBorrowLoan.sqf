@@ -27,7 +27,6 @@ if(_useDonorLevel isEqualTo 1) then {
 if (_value > 999999) exitWith {hint localize "STR_ATM_GreaterThan";};
 if (_value < 0) exitWith {}; 
 if (!([str(_value)] call TON_fnc_isnumber)) exitWith {hint localize "STR_ATM_notnumeric"};
-if (_value > BANK) exitWith {hint localize "STR_ATM_NotEnoughCash"};
 if(_value > _borrowLimit) exitWith {
    _aboveNb = _value - _borrowLimit; // Dit de combien c'est dépassé
     hint format[localize "STR_NOV_loan_BorrowLimit",[_borrowLimit] call life_fnc_numberText,[_aboveNb] call life_fnc_numberText];

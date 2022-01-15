@@ -46,7 +46,7 @@ class Life_livretA_management {
             idc = 690013;
             text = "Déposer: Livret A";
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-            onButtonClick = "[] call life_fnc_NovDepositLivreA";
+            onButtonClick = "[] call nov_fnc_NovDepositLivreA";
             x = 0.434375 * safezoneW + safezoneX;
             y = 0.472 * safezoneH + safezoneY;
             w = 0.13125 * safezoneW;
@@ -56,7 +56,7 @@ class Life_livretA_management {
             idc = 690014;
             text = "Retirer: Livret A";
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-            onButtonClick = "[] call life_fnc_NovWithdrawLivreA";
+            onButtonClick = "[] call nov_fnc_NovWithdrawLivreA";
             x = 0.434375 * safezoneW + safezoneX;
             y = 0.528 * safezoneH + safezoneY;
             w = 0.13125 * safezoneW;
