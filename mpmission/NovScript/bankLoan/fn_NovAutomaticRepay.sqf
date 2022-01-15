@@ -31,14 +31,14 @@ while { LOAN > 0 } do {
 	if(LOAN - _percent >= 0 ) then {
 		BANK = BANK - _percent;
 		LOAN = LOAN - _percent;
-		systemChat format [localize "STR_NOV_Loan_RepaidPaycheckNormal",[_percent] call life_fnc_numberText,[LOAN] call life_fnc_numberText];
+		["loanRemboursementMessage",[format [(localize "STR_NOV_Loan_RepaidPaycheckNormal"),[_percent] call life_fnc_numberText,[LOAN] call life_fnc_numberText]]] call BIS_fnc_showNotification;
 	} else {
 		BANK = BANK - _percent;
 		_aboveNb = _percent - LOAN;
 		_leftToPay = LOAN;
 		BANK = BANK + _aboveNb;
 		LOAN = 0;
-		systemChat format [localize "STR_NOV_Loan_RepaidPaycheckFinished",[_leftToPay] call life_fnc_numberText];
+		["loanRemboursementMessage",[format [(localize "STR_NOV_Loan_RepaidPaycheckFinished"),[_leftToPay] call life_fnc_numberText]]] call BIS_fnc_showNotification;
 	};
 	[getPlayerUID player,LOAN] remoteExecCall ["DB_fnc_updateLoan",RSERV];
 };

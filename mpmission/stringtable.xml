@@ -89,6 +89,17 @@
             <Portuguese>TO EDIT => LIVRET A</Portuguese>
             <Polish>TO EDIT => LIVRET A</Polish>
         </Key>
+        <Key ID="STR_NOV_livretA_TitleInfo">
+            <Original>Withdraw : Livret A</Original>
+            <Czech>TO EDIT => LIVRET A</Czech>
+            <Spanish>TO EDIT => LIVRET A</Spanish>
+            <Russian>TO EDIT => LIVRET A</Russian>
+            <German>TO EDIT => LIVRET A</German>
+            <French>Informations sur votre Livret A</French>
+            <Italian>TO EDIT => LIVRET A</Italian>
+            <Portuguese>TO EDIT => LIVRET A</Portuguese>
+            <Polish>TO EDIT => LIVRET A</Polish>
+        </Key>
        <Key ID="STR_NOV_loan_TitleMenu">
             <Original>Loan Management</Original>
             <Czech>TO EDIT => LOAN</Czech>
@@ -217,6 +228,17 @@
             <Russian>TO EDIT => LOAN</Russian>
             <German>TO EDIT => LOAN</German>
             <French>%1€ à été pris de ta paye pour payer ton emprunt, ton prêt a été entièrement remboursé</French>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN</Polish>
+        </Key>
+        <Key ID="STR_NOV_loan_TitleInfo">
+            <Original>Repay Loan</Original>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
+            <French>Information sur votre prêt !</French>
             <Italian>TO EDIT => LOAN</Italian>
             <Portuguese>TO EDIT => LOAN</Portuguese>
             <Polish>TO EDIT => LOAN</Polish>

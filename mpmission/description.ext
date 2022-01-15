@@ -1,0 +1,18 @@
+// add in CfgNotification
+class CfgNotifications {
+    class livretAMessage {
+        title = "$STR_NOV_livretA_TitleInfo";
+        iconPicture = "NovScript\NovTextures\livretA.paa";
+        description = "%1";
+        duration = 5;
+        priority = 5;
+    };
+
+    class loanRemboursementMessage {
+        title = "$STR_NOV_loan_TitleInfo";
+        iconPicture = "NovScript\NovTextures\loan.paa";
+        description = "%1";
+        duration = 5;
+        priority = 5;
+    };
+};
