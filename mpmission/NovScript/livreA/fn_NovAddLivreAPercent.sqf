@@ -21,7 +21,7 @@ if(_useDonorLevel isEqualTo 1) then {
 	_percentRate = _percentRate + (_donorLevel / 4); // Add 1/4 of the donator Level Level 1 : 2.25 / 2 => 2.5 ... 
 };
 
-while { true } do {
+while { LIVREA > 0 } do {
 	_percent = round((LIVREA * _percentRate) / 100); // Add _percentRate
 	sleep 1800.0; // Every 30 min
 	LIVREA = LIVREA + _percent;
