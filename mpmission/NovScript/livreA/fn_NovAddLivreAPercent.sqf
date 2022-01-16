@@ -23,11 +23,15 @@ if(_useDonorLevel isEqualTo 1) then {
 	_percentRate = _percentRate + (_donorLevel / 4); // Add 1/4 of the donator Level Level 1 : 2.25 / 2 => 2.5 ... 
 };
 
-while { LIVREA > 0 } do {
+while { true } do {
 	_percent = round((LIVREA * _percentRate) / 100); // Add _percentRate
 	sleep _timer; // Every 30 min
-	LIVREA = LIVREA + _percent;
-	[getPlayerUID player,LIVREA] remoteExecCall ["DB_fnc_updateLivreA",RSERV];
-	["livretAMessage",[format [(localize "STR_NOV_livretA_Increase"),[_percent] call life_fnc_numberText,[LIVREA] call life_fnc_numberText]]] call BIS_fnc_showNotification;
+	if(LIVREA isEqualTo 0) then {
+		["livretAMessage",[format [(localize "STR_NOV_livretA_NoLivreA")]]] call BIS_fnc_showNotification;
+	} else {
+		LIVREA = LIVREA + _percent;
+		[getPlayerUID player,LIVREA] remoteExecCall ["DB_fnc_updateLivreA",RSERV];
+		["livretAMessage",[format [(localize "STR_NOV_livretA_Increase"),[_percent] call life_fnc_numberText,[LIVREA] call life_fnc_numberText]]] call BIS_fnc_showNotification;
+	}
 };
 
